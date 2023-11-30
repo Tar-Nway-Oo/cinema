@@ -1,0 +1,129 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: .5em;
+  background-color: rgb(61, 71, 75);
+  color: beige;
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: rgb(44, 46, 46);
+  font-size: .9rem;
+}
+
+.navbar-link:hover,
+.active {
+   color: rgb(16, 17, 16);
+   font-weight: 900;
+   text-decoration: underline;
+}
+
+.header {
+  width: 45%;
+}
+
+.header h1 {
+  font-size: 1.7rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0;
+  color: rgb(117, 154, 168);
+  text-align: start;
+}
+
+.header p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  text-align: start;
+} 
+
+.nav {
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+ }
+
+.nav button {
+  border: .1em solid;
+  padding: .4em;
+  font-size: 1rem;
+  border-radius: .3em;
+  margin: .5em .3em;
+  font-size: .7rem;
+}
+
+.nav button:hover {
+  background-color: rgb(107, 151, 107);
+}
+
+.selected {
+  background-color: rgb(107, 151, 107);
+}
+
+
+.main {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(27%, 1fr));
+  gap: 1em;
+}
+
+.img {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card h4, p {
+  margin: 0;
+}
+
+.card h4 {
+  font-weight: 700;
+  margin: .3em 0;
+}
+
+.card p {
+  font-size: .9rem;
+}
+
+
+@media (min-width: 600px) {
+  
+  html {
+    font-size: 20px;
+  }
+
+  .nav {
+    width: 50%;
+    margin: auto;
+  }
+
+  .main {
+    width: 50%;
+  }
+
+  .container {
+    width: 50%;
+    margin: auto;
+    }
+
+}
+
+

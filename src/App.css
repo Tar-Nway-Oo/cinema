@@ -1,0 +1,70 @@
+.movie-detail {
+   width: 100%;
+   margin: 1em 0;
+   line-height: 1.5em;
+}
+
+.backto-link {
+   color: rgb(110, 175, 153);
+}
+
+.movie-img {
+   width: 75%;
+}
+.movie-detail p {
+   margin: .5em 0;
+}
+
+.form button {
+   padding: .3em 1em;
+   background-color: rgb(100, 137, 153);
+}
+
+.form-item {
+   margin: 1em 1em;
+}
+
+.form p {
+   color: rgb(233, 17, 17);
+}
+
+.watch {
+   display: flex;
+}
+
+.watch img {
+   width: 20%;
+   align-self: flex-start;
+}
+
+.detail--link {
+   text-decoration: none;
+   color: rgb(44, 46, 46);
+   margin: 1em;
+   font-size: .9rem;
+}
+
+.detail--link:hover,
+.active {
+   color: rgb(16, 17, 16);
+   font-weight: 900;
+   text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+
+   .movie-img {
+      width: 30%;
+      align-self: flex-start;
+      margin-right: 1em;
+   }
+
+   .form input {
+      padding: .5em;
+   }
+
+   .form button {
+      padding: .5em 1em;
+   }
+
+}
