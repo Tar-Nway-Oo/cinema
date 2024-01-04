@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import data from "./server.js"
-import "./index.css"
+import data from "../server.js"
+import "../index.css"
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ const filteredMovies = filter ? movies.filter(movie => movie.genre === filter) :
 const movieCard = filteredMovies.map(movie => (
       <div key={movie.id} className="card">
       <Link to={movie.id} state={{search: `?${state}`}}>
-        <img src={movie.url} className="img" alt={movie.name} />
+        <img src={movie.url} className="img" alt={movie.name} loading="lazy" />
       </Link>
       <h4>{movie.name}</h4>
       <p>{movie.genre}</p>

@@ -5,7 +5,11 @@
 }
 
 .backto-link {
-   color: rgb(110, 175, 153);
+   color: black;
+}
+
+.backto-link:hover {
+   color: rgb(32, 32, 32);
 }
 
 .movie-img {

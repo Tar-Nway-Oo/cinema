@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { useParams, Link, useLocation, Outlet, NavLink } from "react-router-dom"; 
-import data from "./server.js"
-import "./App.css"
+import data from "../server.js"
+import "../App.css"
 
 export default function Detail() {
 

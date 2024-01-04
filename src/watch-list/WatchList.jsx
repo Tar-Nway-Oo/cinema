@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import data from "./server.js"
-import "./index.css"
+import data from "../server.js"
+import "../index.css"
 
 export default function WatchList() {
 
